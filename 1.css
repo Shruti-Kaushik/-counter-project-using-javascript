@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(173, 211, 198);
+}
+.container{
+    width: 300px;
+    height:200px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 120px;
+    font-weight: bolder;
+    box-shadow: 10px 5px 5px rgb(74, 30, 30);
+}
+p{
+    font-weight: bolder;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+(function(){
+    let containerr=document.querySelectorAll(".containerr")
+    let counter=0;
+
+            let next=document.querySelector(".next")
+            next.addEventListener("click", function(e){
+                e.preventDefault
+                counter++
+
+                containerr.forEach((containerr,index)=>{
+                 
+                        containerr.style.left=`${index*100}%`
+                    })
+                
+                });
+
+
+                    let back=document.querySelector(".back")
+                    back.addEventListener("click", function(e){
+                        e.preventDefault
+                        counter++
+                        containerr.forEach((containerr,index)=>{
+                            containerr.style.transform=` translate(-${counter*100}%`
+                        
+                        })})
+                    })
+               ()
